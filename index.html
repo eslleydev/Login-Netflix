@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="logo"><img src="logo.png" alt=""></nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h1>Entrar</h1>
+            <input type="text" placeholder="email ou número de telefone" required>
+            <input type="password" placeholder="senha" required>
+            <button type="submit">Entrar</button>
+            <div class="space">
+                <nav class="checkbox-remember">
+                    <input type="checkbox" name="" id="">
+                    <p>Lembre-se de mim</p>
+                </nav>
+                <p> <a href="https://www.netflix.com/br/LoginHelp">Precisa de ajuda?</a></p>
+            </div>
+
+            <div class="new-here">
+                <p>Novo por aqui? <a href="https://www.netflix.com/br/">Assine agora</a></p>
+            </div>
+            <p id="finish">
+                Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" onclick="show()">Saiba
+                    mais.</a>
+            </p>
+        </div>
+        <div id="output"></div>
+    </main>
+
+    <footer>
+
+        <div class="info">
+    <div class="container-footer">
+        <h4>Duvidas? Ligue 0800 591 8942</h4>
+
+            <ul>
+
+                <li><a href="">Perguntas frequentes</a> </li>
+                <li><a href="">Central de ajuda</a> </li>
+                <li><a href="">Termos de uso</a> </li>
+                <li><a href="">Privacidade</a> </li>
+                <li><a href="">Preferências de cookies</a> </li>
+                <li><a href="">Informações corporativas</a> </li>
+
+            </ul>
+
+        </div>
+    </div>
+           
+
+    </footer>
+</body>
+
+<script>
+    let output = document.getElementById("output")
+
+    function show() {
+        alert("As informações recolhidas pelo Google reCAPTCHA estão sujeitas à Política de Privacidade <span> e Termos de Uso, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).")
+    }
+</script>
+
+</html>
